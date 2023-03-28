@@ -34,6 +34,11 @@
   gap: 30px;
 }
 
+.popup-portfolio__gallery-item {
+  object-fit: cover;
+  height: 100%;
+}
+
 .popup-portfolio__closeIconBlock {
   display: flex;
   justify-content: center;

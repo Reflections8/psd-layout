@@ -21,7 +21,7 @@
 .portfolioGrid__grid {
   display: grid;
   grid-template-columns: 1fr 12% 14% 22% 1fr;
-  grid-template-rows: 340px 130px 200px 150px 200px 150px 120px 290px 1fr;
+  grid-template-rows: 340px 130px 200px 150px 200px 150px 120px 290px 120px;
   gap: 10px;
 }
 
