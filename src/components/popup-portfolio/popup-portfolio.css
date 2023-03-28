@@ -36,7 +36,6 @@
 
 .popup-portfolio__gallery-item {
   object-fit: cover;
-  height: 100%;
 }
 
 .popup-portfolio__closeIconBlock {
