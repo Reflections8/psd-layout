@@ -1,0 +1,15 @@
+.ourAffordablePricing {
+  background-image: url('img/bg.jpg');
+  min-height: 480px;
+}
+
+.ourAffordablePricing__title {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-weight: 400;
+}
+
+.ourAffordablePricing__description {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}

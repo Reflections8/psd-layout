@@ -1,0 +1,68 @@
+@import "fonts.css";
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.2;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+
+.container {
+  max-width: 1460px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Grid variant */
+.grid-row {
+  display: grid;
+  grid-template-columns: 26% 12% 36% 26%;
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #00050D;
+  color: white;
+}
+
+/* TODO: Replace to component */
+/* ----- COMPANY NAME ----- */
+.section--companyName {
+  font-weight: 500;
+  padding: 16px 0;
+  font-size: 105px;
+  background-color: #00050D;
+  color: #011016;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  .section--companyName {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section--companyName {
+    font-size: 40px;
+  }
+}

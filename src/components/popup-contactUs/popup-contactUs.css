@@ -1,0 +1,59 @@
+.popup-contactUs {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #223C43AC;
+  transition: all .2s ease-in-out;
+  z-index: 1000;
+}
+
+.popup-contactUsHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-contactUs-form {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-contactUs-form-title {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.popup-contactUs-form-input {
+  margin-bottom: 50px;
+  background-color: #0D1B26;
+  color: #566A7D;
+  font-family: 'Avenir', sans-serif;
+  border: none;
+  outline: none;
+  height: 120px;
+}
+
+.popup-contactUs-form-input::placeholder {
+  color: #566A7D;
+}
+
+.popup-contactUs-form-successText {
+  margin-bottom: 50px;
+}
+
+.popup-contactUs-form-button {
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  text-decoration: underline;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  width: fit-content;
+}

@@ -1,0 +1,60 @@
+.artStation {
+  background-image: url('img/bg.jpg');
+}
+
+.artStation__borderTop {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-bottom: 4px solid #93A1A5;
+  transition: .9s all ease-in-out;
+  transform: scaleX(0);
+}
+
+.artStation__borderTop.aos-animate {
+  transform: scaleX(1);
+}
+
+.artStation__titleWrapper-header {
+  color: white;
+  display: flex;
+  gap: 8px;
+}
+
+.artStation__titleWrapper-header-title {
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.artStation__titleWrapper-header-title-blueBox {
+  border-radius: 3px;
+  background-color: #0075ED;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.artStation__titleWrapper-description {
+  font-weight: 400;
+  color: #96a0a3;
+}
+
+.artStation__titleWrapper__mainContent {
+  font-weight: 600;
+  color: white;
+  font-size: 30px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.artStation__bottomText {
+  color: #96a0a3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

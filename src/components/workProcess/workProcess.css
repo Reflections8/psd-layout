@@ -1,0 +1,10 @@
+.workProcess__title {
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.workProcess__header {
+  font-weight: 400;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}

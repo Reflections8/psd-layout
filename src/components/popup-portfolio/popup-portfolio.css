@@ -1,0 +1,46 @@
+.popup-portfolio {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  background-color: #223C43AC;
+  transition: all .2s ease-in-out;
+  z-index: 1000;
+  padding-top: 8%;
+  overflow-y: scroll;
+}
+
+.popup-portfolioHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-popup-portfolio__textSection-title {
+  font-weight: 600;
+}
+
+.popup-popup-portfolio__textSection-primaryText {
+  text-transform: uppercase;
+}
+
+.popup-portfolio__gallery {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.popup-portfolio__closeIconBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.popup-portfolio__closeIconBlock-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}

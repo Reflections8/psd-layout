@@ -1,0 +1,15 @@
+.contactUs-title {
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.contactUs-header {
+  font-weight: 400;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.contactUs-header-link {
+  text-decoration: none;
+  border-bottom: none;
+}

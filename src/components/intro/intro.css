@@ -1,0 +1,79 @@
+.intro {
+  min-height: 916px;
+  background: linear-gradient(to bottom, transparent, #05151F), url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__logoBlock {
+  text-align: center;
+  position: relative;
+}
+
+.intro__logoBlock:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid #93A1A5;
+  transition: .9s all ease-in-out;
+  transform: scaleX(0);
+}
+
+.aos-animate.intro__logoBlock:after {
+  transform: scaleX(1);
+}
+
+.intro__logoBlock-img {
+  max-width: 115px;
+  height: 95px;
+  width: 100%;
+  background-color: #96C5C7;
+  margin: 0 auto 18px auto;
+}
+
+.intro__logoBlock-title {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.intro__contactBlock {
+  text-align: right;
+}
+
+.intro__linksBlock-list {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.intro__linksBlock-list-item {
+  width: min-content;
+}
+
+.intro__aboutTitle {
+  font-weight: 600;
+}
+
+.intro__aboutText {
+  color: #93A2A5;
+  font-size: 22px;
+}
+
+.intro__aboutText--firstRow {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.intro__aboutText--main {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  max-width: 940px;
+}
