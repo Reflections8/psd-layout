@@ -81,6 +81,11 @@
 
   .footer__iconBlock {
     padding: 8px !important;
+    text-align: left;
+  }
+
+  .footer__iconBlock-icon {
+    width: 50%;
   }
 
   .footer__contactsBlock {

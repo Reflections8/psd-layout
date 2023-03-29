@@ -321,9 +321,7 @@
 <section class="section ourService pb-md mob-pt-md">
 
 		<div class="container">
-				<div class="grid-row"
-						 data-aos="fade-up"
-						 data-aos-duration="700"
+				<div class="grid-row ourService__gridRow"
 				>
 
 						<div class="ourService__title fs-caps mob-mb-sm">
@@ -348,6 +346,7 @@
 				<div class="grid-row">
 						<div class="artStation__borderTop mb-md"
 								 data-aos=""
+								 data-aos-offset="200"
 						>
 
 						</div>
@@ -762,35 +761,35 @@
 
 								<div class="outsourcingProcess__grid-listBoxValues-list mb-sm">
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												EMAIL US AND SEND NDA
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												ANALYSIS THE TASKS AND SEND QUOTE IN 10 HOURS
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												APPROVAL AND CONTRACT SIGN
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												FIRST SKETCHES BASED ON THE BRIEF
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												FEEDBACK AND NOTES
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												REFINING AND MAKE THE FINAL TOUCHES
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												APPROVEMENT
 										</div>
 
-										<div class="outsourcingProcess__grid-listBoxValues-list-value">
+										<div class="outsourcingProcess__grid-listBoxValues-list-value fs-caps">
 												<span class="yellowText">PROJECT DELIVERS!</span>
 										</div>
 
@@ -1267,6 +1266,14 @@
 								cssEase: 'linear'
 						});
 				}
+
+
+				const artStation = document.querySelector('.artStation')
+				window.addEventListener('scroll', () => {
+						if (scrollY > 0) {
+								artStation.classList.add('artStationActive')
+						}
+				})
 		});
 
 </script>

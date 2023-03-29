@@ -173,22 +173,14 @@
   .outsourcingProcess__grid-listBoxKeys-list-key {
     font-size: 12px;
   }
-
-  .outsourcingProcess__grid-listBoxValues-list-value {
-    font-size: 12px;
-  }
-
-  .outsourcingProcess__grid-listBoxValues-description {
-    font-size: 12px !important;
-  }
 }
 
-/* ----- MEDIA <= 480 ----- */
-@media screen and (max-width: 480px) {
-  .outsourcingProcess__grid-table-cell-row {
-    font-size: 12px;
-  }
-}
+/*!* ----- MEDIA <= 480 ----- *!*/
+/*@media screen and (max-width: 480px) {*/
+/*  .outsourcingProcess__grid-table-cell-row {*/
+/*    font-size: 12px;*/
+/*  }*/
+/*}*/
 
 
 /* ----- MEDIA <= 400 ----- */
@@ -200,10 +192,6 @@
 
 
   .outsourcingProcess__grid-listBoxKeys-list-key {
-    font-size: 11px;
-  }
-
-  .outsourcingProcess__grid-listBoxValues-list-value {
     font-size: 11px;
   }
 

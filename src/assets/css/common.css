@@ -14,6 +14,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   transition: padding .2s ease-in-out;
+  background-color: #00050D;
 }
 
 a, button {
