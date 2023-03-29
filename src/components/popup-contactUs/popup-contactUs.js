@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.popup-contactUs-form').submit(function (e) {
     e.preventDefault();
     if (email.value) {
+      email.classList.remove('redPlaceholder')
       $.ajax({
         type: "POST",
         url: "send.php",
@@ -35,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         $('form').trigger('reset');
       });
       return false;
+    } else {
+      email.classList.add('redPlaceholder')
     }
   });
 })

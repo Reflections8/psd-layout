@@ -7,16 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
     infinite: false,
     dots: false,
     arrows: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: prevIcon,
     nextArrow: nextIcon,
     variableWidth: true,
     responsive: [
       {
-        breakpoint: 820,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 1,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 2,
         }
       },
       {

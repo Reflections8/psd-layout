@@ -39,7 +39,7 @@
   height: 120px;
 }
 
-.popup-contactUs-form-input::placeholder {
+.redPlaceholder::placeholder {
   color: #c92c3b;
 }
 

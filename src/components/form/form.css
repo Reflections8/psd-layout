@@ -37,7 +37,7 @@
   font-family: 'Avenir', sans-serif;
 }
 
-.form__body-input::placeholder {
+.redPlaceholder::placeholder {
   color: #c92c3b;
 }
 

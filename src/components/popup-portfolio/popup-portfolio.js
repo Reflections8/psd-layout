@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const popup = document.querySelector('.popup-portfolio')
 
+  const scrollWidth = document.body.offsetWidth - document.body.clientWidth;
+  console.log(scrollWidth)
+
   // Opening logic
   const portfolioItem = document.querySelectorAll('.portfolioGrid__grid-item')
   const popupGalleryContainer = document.querySelector('.popup-portfolio__gallery')
@@ -25,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
           popupGalleryContainer.innerHTML = ''
           popup.classList.remove('popup-portfolioHidden')
 
-          document.body.setAttribute('style', 'overflow-y: hidden;  padding-right: 15px')
+          document.body.setAttribute('style', 'overflow-y: hidden;')
 
           popupGalleryContainer.insertAdjacentHTML('afterbegin', `
             <img src=${clickedSrc}

@@ -8,4 +8,5 @@ $(document).ready(function () {
     autoplaySpeed: 6000,
     cssEase: 'linear'
   });
+
 });

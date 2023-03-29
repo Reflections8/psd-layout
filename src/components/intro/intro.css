@@ -1,5 +1,4 @@
 .intro {
-  min-height: 916px;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -10,6 +9,20 @@
   background-position: center;
   background-color: #00050D;
   transition: all .9s ease-in-out;
+  height: calc(100vh - 158px);
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .intro {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro {
+    height: 100%;
+  }
 }
 
 .intro.aos-animate {

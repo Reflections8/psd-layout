@@ -45,7 +45,17 @@
 		<title>Page title</title>
 
 </head>
+
+
+<!-- jQuery -->
+<script src="src/libs/jQuery/jquery-3.6.3.min.js"></script>
+
 <body>
+
+<div class="loader loaderActive">
+		<div class="loader-logo">LOADING</div>
+</div>
+
 
 <!-- POPUPS -->
 <!-- components/popup-contactUs -->
@@ -161,6 +171,20 @@
 						<img src="src/components/intro/img/bg.jpg"
 								 alt="slider-item"
 								 class="intro__sliderWrapper-slider-item"
+								 id="firstImage"
+								 onload="
+								 	const loader = document.querySelector('.loader')
+										loader.classList.remove('loaderActive')
+										$( '.intro__sliderWrapper-slider').slick({
+											dots: false,
+											infinite: true,
+											speed: 1000,
+											fade: true,
+											autoplay: true,
+											autoplaySpeed: 6000,
+											cssEase: 'linear'
+									});
+									"
 						>
 
 						<img src="src/components/portfolioGrid/img/1.jpg"
@@ -261,6 +285,7 @@
 				<div class="grid-row"
 						 data-aos="fade-up"
 						 data-aos-duration="700"
+						 data-aos-delay="1600"
 				>
 
 						<div class="intro__aboutTitle fs-caps mob-mb-sm">
@@ -276,6 +301,7 @@
 				<div class="grid-row"
 						 data-aos="fade-up"
 						 data-aos-duration="700"
+						 data-aos-delay="1600"
 				>
 
 						<div class="intro__aboutText intro__aboutText--main">
@@ -1196,10 +1222,6 @@
 
 </footer>
 
-
-<!-- jQuery -->
-<script src="src/libs/jQuery/jquery-3.6.3.min.js"></script>
-
 <!-- SlickSlider -->
 <script type="text/javascript" src="src/libs/slick-slider/slick/slick.min.js"></script>
 
@@ -1226,16 +1248,25 @@
 
 <script>
 
+
 		$(document).ready(function () {
-				$(".intro__sliderWrapper-slider").slick({
-						dots: false,
-						infinite: true,
-						speed: 1000,
-						fade: true,
-						autoplay: true,
-						autoplaySpeed: 6000,
-						cssEase: 'linear'
-				});
+
+				const loader = document.querySelector('.loader')
+				const firstImage = document.getElementById('firstImage')
+
+				firstImage.onload = function () {
+						console.log('loaded')
+						loader.classList.remove('loaderActive')
+						$(".intro__sliderWrapper-slider").slick({
+								dots: false,
+								infinite: true,
+								speed: 1000,
+								fade: true,
+								autoplay: true,
+								autoplaySpeed: 6000,
+								cssEase: 'linear'
+						});
+				}
 		});
 
 </script>
