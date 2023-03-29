@@ -151,12 +151,21 @@
 
   .outsourcingProcess__grid-listBoxValues {
     padding: 12px !important;
+    padding-left: 0 !important;
   }
 }
 
 
 /* ----- MEDIA <= 576px ----- */
 @media screen and (max-width: 576px) {
+  .outsourcingProcess__grid-listBoxKeys {
+    display: none;
+  }
+  .outsourcingProcess__grid-listBoxValues {
+    grid-column-start: 1;
+    padding-left: 12px !important;
+    margin: 0 -10px;
+  }
   .outsourcingProcess__grid-table-cell-row-key {
     padding-right: 12px;
   }
@@ -167,6 +176,10 @@
 
   .outsourcingProcess__grid-listBoxValues-list-value {
     font-size: 12px;
+  }
+
+  .outsourcingProcess__grid-listBoxValues-description {
+    font-size: 12px !important;
   }
 }
 
@@ -193,12 +206,20 @@
   .outsourcingProcess__grid-listBoxValues-list-value {
     font-size: 11px;
   }
-}
 
+  .outsourcingProcess__grid-table-cell-row-key {
+    display: none;
+  }
 
-/* ----- MEDIA <= 380 ----- */
-@media screen and (max-width: 380px) {
-  .outsourcingProcess__grid-table-cell-row {
-    font-size: 10px;
+  .outsourcingProcess__grid-table-cell-row-value {
+    width: 100%;
   }
 }
+
+
+/*!* ----- MEDIA <= 380 ----- *!*/
+/*@media screen and (max-width: 380px) {*/
+/*  .outsourcingProcess__grid-table-cell-row {*/
+/*    font-size: 10px;*/
+/*  }*/
+/*}*/

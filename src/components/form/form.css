@@ -84,5 +84,7 @@
 
 /* ----- MEDIA <= 576px ----- */
 @media screen and (max-width: 576px) {
-
+  .form__body-button {
+    font-size: 22px;
+  }
 }

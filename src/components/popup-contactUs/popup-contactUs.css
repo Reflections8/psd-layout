@@ -74,4 +74,8 @@
   .popup-contactUs-form-input {
     height: 80px;
   }
+
+  .popup-contactUs-form-button {
+    font-size: 22px;
+  }
 }

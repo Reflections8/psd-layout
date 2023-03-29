@@ -6,6 +6,7 @@
 
 html {
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,12 +16,39 @@ body {
   transition: padding .2s ease-in-out;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
 h1 {
   font-size: 105px;
+}
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 22px;
+  }
 }
 
 a {
@@ -72,30 +100,6 @@ a {
   color: #011016;
   text-align: center;
   overflow: hidden;
-}
-
-@media screen and (max-width: 1400px) {
-  .section--companyName {
-    font-size: 70px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .section--companyName {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .section--companyName {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .section--companyName {
-    font-size: 22px;
-  }
 }
 
 /* ----- COMPANY NAME ----- */

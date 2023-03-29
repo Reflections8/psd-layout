@@ -91,15 +91,27 @@
 
 /* ----- MEDIA <= 380 ----- */
 @media screen and (max-width: 380px) {
-  .footer .fs-caps {
-    font-size: 12px;
+  .footer__iconBlock {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .footer__contactsBlock {
-    font-size: 10px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .footer__iconBlock-copyright {
-    font-size: 8px;
+    display: none;
+  }
+
+  .footer__linksBlock {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: flex-end;
   }
 }

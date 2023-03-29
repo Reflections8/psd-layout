@@ -37,7 +37,10 @@
 
 
 @media screen and (max-width: 576px) {
-  .fs-caps {
+  /*.fs-caps {*/
+  /*  font-size: 14px;*/
+  /*}*/
+  html {
     font-size: 14px;
   }
 
@@ -48,9 +51,9 @@
 
 
 @media screen and (max-width: 380px) {
-  .fs-caps {
-    font-size: 14px;
-  }
+  /*.fs-caps {*/
+  /*  font-size: 14px;*/
+  /*}*/
 
   .fs-heading {
     font-size: 22px;
