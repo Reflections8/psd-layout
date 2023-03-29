@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const popup = document.querySelector('.popup-contactUs')
-  const contactUsButton = document.querySelector('.intro__contactBlock-link')
+  const contactUsButton = document.querySelectorAll('.intro__contactBlock-link')
 
-  contactUsButton.addEventListener('click', () => {
-    popup.classList.remove('popup-contactUsHidden')
+  contactUsButton.forEach(item => {
+    item.addEventListener('click', () => {
+      popup.classList.remove('popup-contactUsHidden')
+    })
   })
 
   // Closing logic

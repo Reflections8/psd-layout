@@ -12,3 +12,16 @@
   grid-column-start: 3;
   grid-column-end: 4;
 }
+
+
+/* ----- MEDIA <= 820px ----- */
+@media screen and (max-width: 820px) {
+  .ourAffordablePricing {
+    display: none;
+  }
+}
+
+/* ----- MEDIA <= 576px ----- */
+@media screen and (max-width: 576px) {
+
+}

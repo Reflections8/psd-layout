@@ -8,3 +8,27 @@
   grid-column-start: 2;
   grid-column-end: 5;
 }
+
+
+/* ----- MEDIA <= 820px ----- */
+@media screen and (max-width: 820px) {
+  .workProcess {
+    padding-bottom: 0 !important;
+  }
+
+  .workProcess__title {
+    margin-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .workProcess__header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/* ----- MEDIA <= 576px ----- */
+@media screen and (max-width: 576px) {
+
+}

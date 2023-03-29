@@ -11,6 +11,7 @@
   z-index: 1000;
   padding-top: 8%;
   overflow-y: scroll;
+  max-width: calc(100vw - 15px);
 }
 
 .popup-portfolioHidden {
@@ -46,4 +47,35 @@
   cursor: pointer;
   width: 30px;
   height: 30px;
+}
+
+
+/* ----- MEDIA <= 820px ----- */
+@media screen and (max-width: 820px) {
+  .popup-portfolio__closeIconBlock {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .popup-portfolio__textSection {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .popup-portfolio__gallery {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+
+/* ----- MEDIA <= 576px ----- */
+@media screen and (max-width: 576px) {
+
 }

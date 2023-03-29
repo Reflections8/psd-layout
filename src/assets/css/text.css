@@ -13,3 +13,46 @@
 .yellowText {
   color: #e59d29;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+  .fs-caps {
+    font-size: 16px;
+  }
+
+  .fs-heading {
+    font-size: 40px;
+  }
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .fs-heading {
+    font-size: 36px;
+  }
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .fs-caps {
+    font-size: 14px;
+  }
+
+  .fs-heading {
+    font-size: 28px;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .fs-caps {
+    font-size: 14px;
+  }
+
+  .fs-heading {
+    font-size: 22px;
+  }
+}

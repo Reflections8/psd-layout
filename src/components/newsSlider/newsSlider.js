@@ -14,17 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     variableWidth: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 820,
         settings: {
-          slidesToShow: 3,
-          infinite: true
+          slidesToShow: 1,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
-          slidesToShow: 2,
-          dots: true
+          slidesToShow: 1,
+          variableWidth: false,
         }
       },
       {

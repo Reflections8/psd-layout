@@ -12,6 +12,7 @@ body {
   font-family: 'Avenir', sans-serif;
   margin: 0;
   overflow-x: hidden;
+  transition: padding .2s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,11 +32,21 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 /* Grid variant */
 .grid-row {
   display: grid;
   grid-template-columns: 26% 12% 36% 26%;
+}
+@media screen and (max-width: 820px) {
+  .grid-row {
+    grid-template-columns: 25% 75%;
+  }
 }
 
 .section {
@@ -65,5 +76,15 @@ a {
 @media screen and (max-width: 991px) {
   .section--companyName {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section--companyName {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section--companyName {
+    font-size: 22px;
   }
 }
