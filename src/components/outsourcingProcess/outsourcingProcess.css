@@ -58,7 +58,7 @@
 }
 
 .outsourcingProcess__grid-imgWrapper-img {
-  position: relative;
+  position: absolute;
   top: -100px;
   max-width: 100%;
 }

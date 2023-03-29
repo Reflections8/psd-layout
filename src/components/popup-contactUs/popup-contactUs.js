@@ -13,21 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  // Check required values
+  const email = document.querySelector('.popup-contactUs-form-inputEmail')
+
   // Sending logic
   const successText = document.querySelector('.popup-contactUs-form-successText')
 
   $('.popup-contactUs-form').submit(function (e) {
     e.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: "send.php",
-      data: $(this).serialize()
-    }).done(function () {
-      $(this).find("input").val("");
+    if (email.value) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(this).serialize()
+      }).done(function () {
+        $(this).find("input").val("");
 
-      successText.setAttribute('style', 'display: block')
-      $('form').trigger('reset');
-    });
-    return false;
+        successText.setAttribute('style', 'display: block')
+        $('form').trigger('reset');
+      });
+      return false;
+    }
   });
 })

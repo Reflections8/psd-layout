@@ -1,13 +1,19 @@
 .intro {
   min-height: 916px;
-  background: linear-gradient(to bottom, transparent, #05151F);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
   position: relative;
+  background: linear-gradient(to bottom, transparent, #05151F);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #00050D;
+  transition: all .9s ease-in-out;
+}
+
+.intro.aos-animate {
+  background-color: transparent;
 }
 
 .intro__sliderWrapper {
@@ -33,18 +39,13 @@
   position: relative;
 }
 
-.intro__logoBlock:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.intro__logoBlock__borderTop {
   border-bottom: 3px solid #93A1A5;
   transition: .9s all ease-in-out;
   transform: scaleX(0);
 }
 
-.aos-animate.intro__logoBlock:after {
+.intro__logoBlock__borderTop.aos-animate {
   transform: scaleX(1);
 }
 
@@ -58,7 +59,7 @@
 
 .intro__logoBlock-title {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .intro__contactBlock {

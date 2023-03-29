@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-
+$(document).ready(function () {
   $(".intro__sliderWrapper-slider").slick({
     dots: false,
     infinite: true,
@@ -9,5 +8,4 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplaySpeed: 6000,
     cssEase: 'linear'
   });
-
-})
+});

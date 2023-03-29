@@ -53,4 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     popup.classList.add('popup-portfolioHidden')
     document.body.removeAttribute('style')
   })
+
+  popup.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('popup-portfolio__gallery-item')) {
+      popup.classList.add('popup-portfolioHidden')
+      document.body.removeAttribute('style')
+    }
+  })
 })

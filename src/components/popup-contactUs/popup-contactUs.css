@@ -39,7 +39,7 @@
 }
 
 .popup-contactUs-form-input::placeholder {
-  color: #566A7D;
+  color: #c92c3b;
 }
 
 .popup-contactUs-form-successText {
@@ -56,4 +56,5 @@
   background-color: transparent;
   cursor: pointer;
   width: fit-content;
+  font-weight: 600;
 }
