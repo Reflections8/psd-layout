@@ -1210,7 +1210,6 @@
 <script src="src/assets/js/index.js"></script>
 
 <!-- Component scripts -->
-<script src="src/components/intro/intro.js/"></script>
 <script src="src/components/ourService/ourService.js"></script>
 <script src="src/components/ourPricing/ourPricing.js"></script>
 <script src="src/components/portfolioGrid/portfolioGrid.js"></script>
@@ -1224,6 +1223,22 @@
 
 <script src="src/components/popup-contactUs/popup-contactUs.js"></script>
 <script src="src/components/popup-portfolio/popup-portfolio.js"></script>
+
+<script>
+
+		$(document).ready(function () {
+				$(".intro__sliderWrapper-slider").slick({
+						dots: false,
+						infinite: true,
+						speed: 1000,
+						fade: true,
+						autoplay: true,
+						autoplaySpeed: 6000,
+						cssEase: 'linear'
+				});
+		});
+
+</script>
 
 </body>
 </html>
