@@ -31,19 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src=${clickedSrc}
                  alt="portfolio-item"
                  class="popup-portfolio__gallery-item">
-                 
-            ${galleryArray.map(item => {
-            return (
-              `
-                <img src=${item.src}
-                alt="portfolio-item"
-                class="popup-portfolio__gallery-item">
-              `
-            )
-          })}
+                
           `)
-        })
 
+          galleryArray.map(item => {
+
+            popupGalleryContainer.insertAdjacentHTML('afterbegin', `
+            <img src=${item.src}
+                 alt="portfolio-item"
+                 class="popup-portfolio__gallery-item">
+                
+          `)
+          })
+        })
     })
   })
 

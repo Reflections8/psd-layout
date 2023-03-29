@@ -29,13 +29,12 @@
 .popup-portfolio__gallery {
   grid-column-start: 2;
   grid-column-end: 4;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .popup-portfolio__gallery-item {
   object-fit: cover;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .popup-portfolio__closeIconBlock {
