@@ -2,10 +2,13 @@
   background-image: url('img/bg.jpg');
   opacity: 0;
   transition: .7s ease-in-out;
+  position: relative;
+  bottom: -100px;
 }
 
 .artStationActive {
   opacity: 1;
+  bottom: 0;
 }
 
 .artStation__borderTop {
